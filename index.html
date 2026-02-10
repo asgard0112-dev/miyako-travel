@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>宮古島自駕旅程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --sea-blue: #0077B6;
+            --sand-beige: #F8F5F2;
+            --coral: #FF8A80;
+            --forest: #4F7942;
+        }
+        body { background-color: var(--sand-beige); font-family: "Noto Sans TC", sans-serif; color: #444; }
+        .card { background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden; }
+        .tab-active { color: var(--sea-blue); border-bottom: 3px solid var(--sea-blue); font-weight: bold; }
+        .nav-btn { background-color: var(--sea-blue); color: white; border-radius: 12px; transition: all 0.2s; }
+        .nav-btn:active { transform: scale(0.96); opacity: 0.9; }
+        .badge-food { background: #FFF3E0; color: #E65100; font-size: 0.75rem; }
+        .badge-spot { background: #E0F2F1; color: #00796B; font-size: 0.75rem; }
+        .checkbox-item input:checked + span { text-decoration: line-through; color: #AAA; }
+    </style>
+</head>
+<body class="pb-20">
+
+    <header class="bg-white p-6 text-center shadow-sm">
+        <h1 class="text-2xl font-bold tracking-tight text-blue-900">古莫尼踅宮古島 🐚</h1>
+        <p class="text-xs text-gray-400 mt-1 italic">Miyako Island Driving Guide</p>
+    </header>
+
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md flex justify-around border-b border-gray-100 z-50">
+        <button onclick="showTab('day1')" id="tab1" class="tab-active px-6 py-4">2/24 D1</button>
+        <button onclick="showTab('day2')" id="tab2" class="px-6 py-4 text-gray-400">2/25 D2</button>
+        <button onclick="showTab('info')" id="tab3" class="px-6 py-4 text-gray-400">航班/交通</button>
+    </nav>
+
+    <main class="p-4 max-w-md mx-auto">
+        
+        <div id="content-day1">
+            <div class="flex justify-between items-center mb-4 px-1">
+                <h2 class="text-xl font-bold">海風與神社的巡禮</h2>
+                <span class="text-sm bg-blue-50 text-blue-600 px-3 py-1 rounded-full"><i class="fas fa-cloud-sun"></i> 18°C - 21°C</span>
+            </div>
+
+            <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl mb-6 text-sm text-amber-800 font-bold">
+                🚩 10:50 抵達下地島機場 <br>
+                ⚠️ 重點：16:00 前須抵達住宿 Check-in！
+            </div>
+
+            <div class="card p-5 mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="badge-food px-2 py-0.5 rounded">🍴 餐廳</span>
+                    <span class="text-xs text-gray-400">11:30-14:30</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Restaurant Irie</h3>
+                <p class="text-xs text-gray-500 mb-3 italic">機場附近的溫馨小店</p>
+                <div class="bg-orange-50 p-2 rounded text-xs mb-4">
+                    <b class="text-orange-700">【必吃美食】：</b>宮古島蕎麥麵
+                </div>
+                <a href="#" class="nav-btn w-full block py-3 text-center text-sm font-bold"><i class="fas fa-location-arrow mr-2"></i>開啟導航</a>
+            </div>
+
+            <div class="card p-5 mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="badge-spot px-2 py-0.5 rounded">🌊 自然景觀</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">17 END & 通池</h3>
+                <div class="text-xs text-gray-600 space-y-2 mb-4">
+                    <p><b>17 END：</b>跑道盡頭，退潮時有絕美夢幻沙灘。</p>
+                    <p><b>通池：</b>巨大深藍水池，底部通大海的神祕傳說。</p>
+                </div>
+                <div class="flex gap-2">
+                    <a href="#" class="nav-btn flex-1 py-3 text-center text-xs font-bold">17 END 導航</a>
+                    <a href="#" class="nav-btn flex-1 py-3 text-center text-xs font-bold">通池 導航</a>
+                </div>
+            </div>
+
+            <div class="card p-5 mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="badge-food px-2 py-0.5 rounded">🍩 點心</span>
+                </div>
+                <h3 class="text-lg font-bold mb-3">Nakayukui Shote</h3>
+                <div class="bg-orange-50 p-2 rounded text-xs mb-4">
+                    <b class="text-orange-700">【必吃美食】：</b>紅薯黑糖炸麵糰 (Sata Andagi)，外酥內軟
+                </div>
+                <a href="#" class="nav-btn w-full block py-3 text-center text-sm font-bold"><i class="fas fa-location-arrow mr-2"></i>開啟導航</a>
+            </div>
+
+            <div class="card p-5 mb-4 bg-slate-50 border-none shadow-none">
+                <h3 class="font-bold mb-4 text-slate-700 border-b pb-2"><i class="fas fa-shopping-cart mr-2"></i>MAXVALU 採買清單</h3>
+                <div class="space-y-3 text-sm">
+                    <label class="checkbox-item flex items-center gap-2"><input type="checkbox" class="w-4 h-4"> <span>和牛 / 肉片 / 生魚片</span></label>
+                    <label class="checkbox-item flex items-center gap-2"><input type="checkbox" class="w-4 h-4"> <span>火鍋湯底 / 蔬菜物資</span></label>
+                    <label class="checkbox-item flex items-center gap-2"><input type="checkbox" class="w-4 h-4"> <span class="font-bold text-blue-700">【必買】堀西萬用調味粉</span></label>
+                    <label class="checkbox-item flex items-center gap-2"><input type="checkbox" class="w-4 h-4"> <span>葡萄 / 草莓 / 香蕉</span></label>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-day2" class="hidden">
+            <div class="flex justify-between items-center mb-4 px-1">
+                <h2 class="text-xl font-bold">海底世界與金黃炸豬排</h2>
+                <span class="text-sm bg-yellow-50 text-yellow-600 px-3 py-1 rounded-full"><i class="fas fa-sun"></i> 20°C - 23°C</span>
+            </div>
+
+            <div class="card p-5 mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="badge-spot px-2 py-0.5 rounded">🤿 水上活動</span>
+                    <span class="text-xs text-gray-400">08:00 - 12:00</span>
+                </div>
+                <h3 class="text-lg font-bold mb-2">浮潛 / 海底玻璃船</h3>
+                <p class="text-xs text-gray-500 mb-4">シースカイ博愛 (Sea Sky Hakurai)</p>
+                <a href="#" class="nav-btn w-full block py-3 text-center text-sm font-bold"><i class="fas fa-anchor mr-2"></i>開啟導航</a>
+            </div>
+
+            <div class="card p-5 mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="badge-food px-2 py-0.5 rounded">🍴 餐廳</span>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Marukami (丸吉食堂)</h3>
+                <p class="text-[10px] text-red-500 font-bold mb-3 italic">!! 排隊時間長 (30-90min) !!</p>
+                <div class="bg-orange-50 p-2 rounded text-xs mb-4">
+                    <b class="text-orange-700">【必吃美食】：</b>豬肋蕎麥麵
+                </div>
+                <a href="#" class="nav-btn w-full block py-3 text-center text-sm font-bold"><i class="fas fa-location-arrow mr-2"></i>開啟導航</a>
+            </div>
+
+            <div class="card p-5 mb-4">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="badge-food px-2 py-0.5 rounded">🍱 餐廳</span>
+                </div>
+                <h3 class="text-lg font-bold mb-3">琉球炸豬排 Mitsuya</h3>
+                <div class="bg-orange-50 p-2 rounded text-xs mb-4">
+                    <b class="text-orange-700">【必點菜單】：</b>阿古豬 (Agu Pork) 炸豬排，油脂豐富
+                </div>
+                <a href="#" class="nav-btn w-full block py-3 text-center text-sm font-bold"><i class="fas fa-utensils mr-2"></i>開啟導航</a>
+            </div>
+        </div>
+
+        <div id="content-info" class="hidden">
+            <div class="card p-6 border-none shadow-none bg-blue-900 text-white rounded-3xl">
+                <h3 class="text-xl font-bold mb-6 border-b border-blue-800 pb-2"><i class="fas fa-info-circle mr-2"></i>旅程資訊</h3>
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <p class="opacity-60 mb-1 font-bold">住宿地點</p>
+                        <p class="text-lg font-bold">Crystal Villa Bayside</p>
+                    </div>
+                    <div>
+                        <p class="opacity-60 mb-1 font-bold">自駕必備</p>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>台灣駕照正本</li>
+                            <li>日文翻譯本</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-800/50 p-4 rounded-xl">
+                        <p class="font-bold mb-2">💡 導航提醒</p>
+                        <p class="text-xs opacity-80 leading-relaxed">宮古島多路口，右駕轉彎請確認車距並注意行人。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            ['day1', 'day2', 'info'].forEach(id => document.getElementById('content-'+id).classList.add('hidden'));
+            ['tab1', 'tab2', 'tab3'].forEach(id => document.getElementById(id).classList.remove('tab-active', 'text-gray-400'));
+            
+            document.getElementById('content-'+tabId).classList.remove('hidden');
+            const btnId = tabId === 'day1' ? 'tab1' : tabId === 'day2' ? 'tab2' : 'tab3';
+            document.getElementById(btnId).classList.add('tab-active');
+            ['tab1', 'tab2', 'tab3'].forEach(id => {
+                if(id !== btnId) document.getElementById(id).classList.add('text-gray-400');
+            });
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>
