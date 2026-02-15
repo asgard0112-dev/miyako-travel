@@ -81,7 +81,7 @@
             border: 1px solid #F0F0F0; 
         }
 
-        .nav-tab { flex: 1; text-align: center; padding: 14px 0; font-size: 0.9rem; color: #999; border-bottom: 3px solid transparent; transition: 0.2s; cursor: pointer; }
+        .nav-tab { flex: 1; text-align: center; padding: 14px 0; font-size: 0.8rem; color: #999; border-bottom: 3px solid transparent; transition: 0.2s; cursor: pointer; }
         .nav-tab.active { color: #0288D1; border-bottom-color: #0288D1; font-weight: bold; }
         
         .btn-nav { background-color: var(--ocean-blue); color: white; border-radius: 12px; font-weight: bold; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 12px; }
@@ -116,6 +116,7 @@
         <div onclick="showTab('day1')" id="t1" class="nav-tab active">2/24</div>
         <div onclick="showTab('day2')" id="t2" class="nav-tab">2/25</div>
         <div onclick="showTab('day3')" id="t3" class="nav-tab">2/26</div>
+        <div onclick="showTab('day4')" id="t5" class="nav-tab">2/27</div>
         <div onclick="showTab('info')" id="t4" class="nav-tab">工具箱</div>
     </nav>
     
@@ -372,7 +373,7 @@
             </div>
             <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
-            <!-- 卡片 3 -->
+          <!-- 卡片 3 -->
             <div class="card">
                 <img src="https://i.meee.com.tw/FF8SvvC.jpg" class="w-full h-48 object-cover">
                 <div class="p-5">
@@ -381,14 +382,21 @@
                         <span class="text-xs text-gray-400 font-mono">11:00 - 16:00</span>
                     </div>
                     <h3 class="font-bold text-lg">Marukami 蕎麥麵</h3>
-                    <div class="guide-note"><b>📢 備註：</b>登記候位，一輪僅限 6 人。</div>
+                    <div class="guide-note"><b>📢 提示：</b>登記候位，一輪僅限 6 人。</div>
+                    
+                    <!-- 按鈕組 -->
                     <div class="flex gap-2 mt-4">
-                        <a href="https://maps.app.goo.gl/o3TSUsAiZwuVF2q6A">開啟導航</a>
-                        <a href="https://i.meee.com.tw/I2nXhgJ.jpg" class="btn-secondary flex-1 justify-center py-3">查看菜單</a>
+                        <!-- 藍色背景導航按鈕 -->
+                        <a href="https://maps.app.goo.gl/o3TSUsAiZwuVF2q6A" class="btn-nav flex-1 text-sm">
+                            <i class="fas fa-map-marked-alt"></i> 開啟導航
+                        </a>
+                        <!-- 灰色背景菜單按鈕 -->
+                        <a href="https://i.meee.com.tw/I2nXhgJ.jpg" class="btn-secondary flex-1 justify-center py-3">
+                            <i class="fas fa-utensils"></i> 查看菜單
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
 <!-- 卡片 3-1 (新增) -->
             <div class="card">
@@ -623,6 +631,73 @@
             </div>
         </div>
 
+        <!-- ====================== Day 4 ====================== -->
+        <div id="day4" class="hidden">
+            <h2 class="font-bold text-xl text-slate-800 mb-5 ml-1 flex items-center gap-2">📍 Day 4 行程路線</h2>
+
+<!-- 卡片 1 -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/BHUDEAO.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-task">🛫 回台灣啦</span>
+                    </div>
+                    <h3 class="font-bold text-lg">下地島機場</h3>
+                    <div class="guide-note">
+                        <b>📢 提示：</b><br>
+                        • <span class="text-red-600 font-bold">登機時間：10:35</span><br>
+                        旅程進入尾聲，帶著滿滿回憶準備回家囉！請記得提前抵達機場辦理報到手續。✈️
+                    </div>
+                    <a href="https://maps.app.goo.gl/uj1hrYKiQmHquRJN7?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-plane-departure"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+            <!-- 卡片 2 -->
+            <div class="card mb-10">
+                <img src="https://i.meee.com.tw/HDAXSI1.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-spot">🧧 拜拜平安賺大錢</span>
+                    </div>
+                    <h3 class="font-bold text-lg">竹山紫南宮</h3>
+                    <div class="guide-note">
+                        <b>💡 介紹：</b><br>
+                        回國後來到全台最靈驗的土地公廟之一。💰<br>
+                        在這裡求個發財金，祈求新的一年財源滾滾、闔家平安順利！🐍✨
+                    </div>
+                    <a href="https://maps.app.goo.gl/HV5PdCdkCcYU7Ro17?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-place-of-worship"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+        </div>
+
+<!-- 【方案 3：合照 Ending】 -->
+            <div class="mt-16 mb-20 text-center px-4">
+                <div class="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-[10px] font-bold tracking-widest uppercase mb-6">Memory ending</div>
+                <div class="relative inline-block">
+                    <!-- 照片外框設計 -->
+                    <div class="bg-white p-2 shadow-2xl rounded-2xl transform rotate-2">
+                        <img src="https://i.meee.com.tw/M23hpYU.jpg" class="w-full h-auto rounded-xl">
+                    </div>
+                    <!-- 裝飾小圖示 -->
+                    <div class="absolute -bottom-4 -right-2 bg-yellow-400 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg transform -rotate-12 border-2 border-white">
+                        <i class="fas fa-heart text-red-500"></i>
+                    </div>
+                </div>
+                <h3 class="mt-10 font-bold text-slate-800 text-xl tracking-tight">2026古莫尼👶宮古島大冒險  完成🍼</h3>
+                <p class="text-slate-400 text-xs mt-3 italic tracking-widest">被好風景收買，剩下的全是好心情✨</p>
+                <div class="mt-8 flex justify-center gap-2 opacity-30">
+                    <i class="fas fa-anchor text-[10px]"></i>
+                    <i class="fas fa-fish text-[10px]"></i>
+                    <i class="fas fa-sun text-[10px]"></i>
+                </div>
+            </div>
+        </div>
+
         <!-- ====================== 工具箱 ====================== -->
         <div id="info" class="hidden">
             <div class="card p-6 border-none shadow-lg text-white" style="background-color: var(--earth-brown);">
@@ -651,13 +726,14 @@
 
     <script>
         function showTab(tabId) {
-            ['day1', 'day2', 'day3', 'info'].forEach(id => document.getElementById(id).classList.add('hidden'));
-            ['t1', 't2', 't3', 't4'].forEach(id => document.getElementById(id).classList.remove('active'));
+            ['day1', 'day2', 'day3', 'day4', 'info'].forEach(id => document.getElementById(id).classList.add('hidden'));
+            ['t1', 't2', 't3', 't4', 't5'].forEach(id => document.getElementById(id).classList.remove('active'));
             
             document.getElementById(tabId).classList.remove('hidden');
             if(tabId === 'day1') document.getElementById('t1').classList.add('active');
             if(tabId === 'day2') document.getElementById('t2').classList.add('active');
             if(tabId === 'day3') document.getElementById('t3').classList.add('active');
+            if(tabId === 'day4') document.getElementById('t5').classList.add('active');
             if(tabId === 'info') document.getElementById('t4').classList.add('active');
             window.scrollTo(0, 0);
             twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
