@@ -433,7 +433,28 @@
             </div>
             <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
-            <!-- 卡片 5 -->
+<!-- 卡片 5-2 -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/hZfzzmx.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-shop">🛍️ 在地小店</span>
+                        <span class="text-xs text-gray-400 font-mono">11:00 - 17:00</span>
+                    </div>
+                    <h3 class="font-bold text-lg">南国雑貨TIDA</h3>
+                    <div class="guide-note">
+                        <b>📢</b><br>
+                        • 海灘文創雜貨與原創 T 恤 👕<br>
+                        • 冰沙、泡盛雞尾酒飲品 🍹
+                    </div>
+                    <a href="https://maps.app.goo.gl/DBfv1arsMKGxYXWU7?g_st=ic" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-map-marked-alt"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+           
+ <!-- 卡片 5 -->
             <div class="card">
                 <img src="https://i.meee.com.tw/8cxZovA.jpg" class="w-full h-48 object-cover">
                 <div class="p-5">
@@ -482,9 +503,21 @@
                             <p class="text-xs font-bold opacity-80" style="color: var(--coral-text);">Villa Malibu Palm Springs 宮古島</p>
                         </div>
                     </div>
-                    <a href="https://maps.app.goo.gl/89DDt64rsn5Jf2kb8" class="btn-nav mt-2 py-3 text-sm shadow-md" style="background-color: var(--coral-text);">
+                    
+                    <!-- 新增提醒資訊 -->
+                    <div class="guide-note mb-4 text-xs" style="background: rgba(255,255,255,0.6); border-color: rgba(216, 27, 96, 0.2);">
+                        <b style="color: var(--coral-text);">🍼 寶寶設備提醒：</b><br>
+                        入住時請至「工具箱」出示備品清單給房東核對。
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/89DDt64rsn5Jf2kb8" class="btn-nav py-3 text-sm shadow-md" style="background-color: var(--coral-text);">
                         <i class="fas fa-bed"></i> 前往 Check-in
                     </a>
+                    
+                    <!-- 新增跳轉工具箱按鈕 -->
+                    <button onclick="showTab('info')" class="btn-secondary w-full justify-center bg-amber-50 text-amber-700 border-amber-200 mt-2 py-2">
+                        <i class="fas fa-baby"></i> 查看寶寶備品清單
+                    </button>
                 </div>
             </div>
             <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
@@ -556,28 +589,6 @@
             </div>
             <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
-            <!-- 卡片 11 -->
-            <div class="card mb-10">
-                <img src="https://i.meee.com.tw/oqufzF0.jpg" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="badge badge-shop">🛒 購物天堂</span>
-                        <span class="text-xs text-gray-400 font-mono">08:00 - 02:00</span>
-                    </div>
-                    <h3 class="font-bold text-lg">?唐吉訶德 嗎?</h3>
-                    <div class="guide-note text-xs">
-                        <b>📢 攻略：</b><br>
-                        • 免稅藥妝只能去藥妝櫃檯結帳 (可併結其他商品)<br>
-                        • 推薦：炸馬鈴薯🥔熱食 earth potato
-                    </div>
-                    <div class="flex gap-2 mt-4">
-                        <!-- 已更新導航連結 -->
-                        <a href="https://maps.app.goo.gl/bQzXWknhAmsAJZxe9" class="btn-nav flex-1 text-sm">
-                            <i class="fas fa-location-arrow"></i> 開啟導航
-                        </a>
-                        <button onclick="window.location.href='#'" class="btn-secondary flex-1 justify-center py-3">
-                            <i class="fas fa-list-ul"></i> 推薦清單
-                        </button>
                     </div>
                 </div>
             </div>
@@ -611,27 +622,162 @@
 <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
 
-            <!-- 卡片 2 -->
+ 
             <div class="card mb-10">
-                <img src="https://i.meee.com.tw/kvuBfwM.jpg" class="w-full h-48 object-cover">
+                <img <! src="https://i.meee.com.tw/kvuBfwM.jpg" class="w-full h-48 object-cover">
                 <div class="p-5">
                     <div class="flex justify-between items-start mb-2">
-                        <span class="badge badge-food">🥩 午餐</span>
-                        <span class="text-xs text-gray-400 font-mono">規劃中</span>
+                        <span class="badge badge-food">🥩 必吃宮古牛</span>
+                        <span class="text-[10px] text-gray-400 font-mono">11:00-15:00 / 17:00-22:00</span>
                     </div>
-                    <h3 class="font-bold text-lg">美味燒烤 (觀望中)</h3>
+                    <h3 class="font-bold text-lg">宮古牛 鉄板焼 ユキシオステーキ</h3>
                     <div class="guide-note">
-                        <p class="text-lg font-bold text-red-600">📢 嘎和要吃肉！！🥩🔥</p>
-                        <p class="text-xs text-gray-500 mt-2">（目前仍在挑選島上最厲害的燒肉店，敬請期待...）</p>
+                        <p class="text-blue-700 font-bold mb-1">📢 要吃肉！！🥩🔥</p>
+                        <b>✨ 推薦必點：</b>雪鹽牛排套餐！🧂🐂<br>
+                        <b>💡 提示：</b>支援 Google 線上預約！
                     </div>
-                    <button class="btn-nav mt-4 text-sm bg-gray-400 cursor-not-allowed" disabled>
-                        <i class="fas fa-clock"></i> 尚未開啟導航
-                    </button>
+                    <a href="https://maps.app.goo.gl/Hi8MMVab9xu1SE1CA?g_st=ic" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-location-arrow"></i> 開啟導航
+                  </a>
                 </div>
             </div>
             <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
+<!-- 卡片：Blue Seal 冰淇淋 -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/kk3jYdy.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-food">🍦 甜點/下午茶</span>
+                        <span class="text-xs text-gray-400 font-mono">10:00 - 20:00</span>
+                    </div>
+                    <h3 class="font-bold text-lg">Blue Seal Miyako Island Painagama</h3>
+                    <div class="guide-note">
+                        <b>💡 攻略：</b>沖繩必吃的冰淇淋！這間分店裝潢超美，有<span class="text-blue-700 font-bold">「室內吊床」</span>座席，離海灘也很近。🌿<br>
+                        <b>✨ 推薦：</b>海鹽冰淇淋、紅薯口味、或是繽紛的水果雪酪 🍨
+                    </div>
+                    <a href="https://maps.app.goo.gl/tkSJ5rsatGGCdpf36?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-location-arrow"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
 
+            <!-- 卡片：閒逛 Pai -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/q4mR3eS.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-spot">🌊 閒逛</span>
+                    </div>
+                    <h3 class="font-bold text-lg">Funakusu Beach
+</h3>
+                    <div class="guide-note">
+                        <b>💡 介紹：</b>適合看海發呆或傍晚散步。
+                    </div>
+                    <a href="https://maps.app.goo.gl/cNs3gm1NwvKeCBgj7?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-location-arrow"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+            <!-- 卡片：點心 Sayuri Kitchen -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/2nxQVIU.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-food">🍩 點心</span>
+                        <span class="text-xs text-gray-400 font-mono">10:00 - 17:00</span>
+                    </div>
+                    <h3 class="font-bold text-lg">Sayuri Kitchen (さゆりキッチン)</h3>
+                    <div class="guide-note">
+                        <b>💡 必買：</b>道地的沖繩炸菓子 (Sata Andagi)，外酥內軟，很有在地媽媽的味道！
+                    </div>
+                    <a href="https://maps.app.goo.gl/qzR2HDev52UGSVoB8?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-map-marked-alt"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+            <!-- 卡片： 伊良部大橋展望 -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/CXOfG9H.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-spot">🔭 景點</span>
+                    </div>
+                    <h3 class="font-bold text-lg">伊良部大橋展望點</h3>
+                    <div class="guide-note">
+                        <b>💡 攻略：</b>眺望宮古島最長大橋的最佳角度，海水藍的層次分明，必拍打卡點。
+                    </div>
+                    <a href="https://maps.app.goo.gl/QbxqKw8KSSqVznaV6?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-camera"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+            <!-- 卡片：買餅乾 雪鹽博物館 -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/gdWJMz2.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-shop">🍪 買餅乾/伴手禮</span>
+                        <span class="text-xs text-gray-400 font-mono">09:00 - 17:00</span>
+                    </div>
+                    <h3 class="font-bold text-lg">雪鹽博物館 (Yukishio Museum)</h3>
+                    <div class="guide-note">
+                        <b>✨ 推薦：</b><br>
+                        • 雪鹽夾心餅乾必買！<br>
+                        • 雪鹽霜淇淋（可以灑各種口味的鹽）🧂🍦
+                    </div>
+                    <a href="https://maps.app.goo.gl/i1QLT8sb9XMEEAYF7?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-shopping-cart"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+            <!-- 卡片：下午茶 HARRY'S Shrimp Truck -->
+            <div class="card">
+                <img src="https://i.meee.com.tw/s76klkF.jpg" class="w-full h-48 object-cover">
+                <div class="p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="badge badge-food">🦐 下午茶/餐車</span>
+                        <span class="text-xs text-gray-400 font-mono">11:00 - 18:00</span>
+                    </div>
+                    <h3 class="font-bold text-lg">HARRY'S Shrimp Truck</h3>
+                    <div class="guide-note">
+                        <b>💡 介紹：</b>超吸睛的黃色美式餐車，主打夏威夷風味蒜香蝦飯，拍照超好看！📸
+                    </div>
+                    <a href="https://maps.app.goo.gl/EEAjdEsPUcU3dAdg8?g_st=il" class="btn-nav mt-4 text-sm">
+                        <i class="fas fa-utensils"></i> 開啟導航
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+            <!-- 卡片：回民宿 D's TERRACE -->
+            <div class="card border-none shadow-lg">
+                <https://i.meee.com.tw/s76klkF.jpg" class="w-full h-48 object-cover">
+                <div class="p-6" style="background-color: var(--coral-soft);">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-2xl">🏠</span>
+                        <div>
+                            <h3 class="font-bold text-lg" style="color: var(--coral-text);">本日住宿</h3>
+                            <p class="text-xs font-bold opacity-80" style="color: var(--coral-text);">D's TERRACE</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/LWQdDJGutUXptNAV6?g_st=il" class="btn-nav mt-4 py-3 text-sm shadow-md" style="background-color: var(--coral-text);">
+                        <i class="fas fa-home"></i> 返回民宿休息
+                    </a>
+                </div>
+            </div>
+            <div class="route-arrow"><i class="fas fa-chevron-down"></i></div>
+
+           
 <!-- 卡片 3 -->
             <div class="card mb-10">
                 <img src="https://i.meee.com.tw/oqufzF0.jpg" class="w-full h-48 object-cover">
@@ -640,7 +786,7 @@
                         <span class="badge badge-shop">🛒 購物天堂</span>
                         <span class="text-xs text-gray-400 font-mono">08:00 - 02:00</span>
                     </div>
-                    <h3 class="font-bold text-lg">又 唐吉訶德嗎</h3>
+                    <h3 class="font-bold text-lg">唐吉訶德</h3>
                     <div class="guide-note text-xs">
                         <b>📢 攻略：</b><br>
                         • 免稅藥妝只能去藥妝櫃檯結帳 (可併結其他商品)<br>
@@ -728,6 +874,90 @@
 
         <!-- ====================== 工具箱 ====================== -->
         <div id="info" class="hidden">
+            <!-- 寶寶設備確認卡片 (給房東看) -->
+            <div class="card border-2 border-amber-200 shadow-md mb-6">
+                <div class="p-5 bg-amber-50/50">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-2xl">🍼</span>
+                        <h3 class="font-bold text-lg text-amber-900">住宿設備確認 / 備品のご確認</h3>
+                    </div>
+                    
+                    <div class="japanese-box bg-white border-amber-500 text-sm mb-4">
+                        すみません、予約した以下のベビー用品を確認させていただけますか？<br>
+                        <span class="text-xs text-gray-500">(不好意思，我想確認一下預約的以下嬰兒用品)</span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">カトラリーセット</p>
+                                <p class="text-xs text-gray-500">餐具組（湯匙、叉子等）</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">哺乳瓶スタンドラック</p>
+                                <p class="text-xs text-gray-500">奶瓶晾曬架</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">多機能ウォーマー</p>
+                                <p class="text-[10px] text-gray-400">（除菌/保温加熱）</p>
+                                <p class="text-xs text-gray-500">多功能暖奶器</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">ベビーチェア <span class="text-[10px] bg-amber-200 px-1 rounded">1F Closet</span></p>
+                                <p class="text-xs text-gray-500 italic">（1F クローゼット内）</p>
+                                <p class="text-xs text-gray-500">寶寶餐椅</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">DockATot</p>
+                                <p class="text-xs text-gray-500">多功能睡墊/床中床</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">ベビー敷布団</p>
+                                <p class="text-xs text-gray-500">嬰兒墊被/床墊</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 border-b border-amber-100 pb-2">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">ベッドガード</p>
+                                <p class="text-xs text-gray-500">床邊護欄</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" class="mt-1">
+                            <div>
+                                <p class="font-bold text-slate-800">ベビーカー <span class="text-[10px] bg-amber-200 px-1 rounded">Entrance</span></p>
+                                <p class="text-xs text-gray-500 italic">（玄関にあります）</p>
+                                <p class="text-xs text-gray-500">嬰兒推車</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="card p-6 border-none shadow-lg text-white" style="background-color: var(--earth-brown);">
                 <h3 class="font-bold text-xl mb-6 border-b border-white/20 pb-3">✈️ 航班資訊</h3>
                 <div class="space-y-4">
